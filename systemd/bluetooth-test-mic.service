@@ -1,0 +1,10 @@
+[Unit]
+Description=DualSense microphone to Bluetooth headset uplink
+After=pipewire.service wireplumber.service
+Conflicts=bluetooth-test-tone.service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash %h/bluetooth-test-headset/route-dualsense-mic.sh
+Restart=on-failure
+RestartSec=2

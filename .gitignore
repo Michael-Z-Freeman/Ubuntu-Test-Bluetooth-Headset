@@ -1,0 +1,17 @@
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.venv/
+source/
+*.wav
+*.caf
+*.npy
+*.log
+*.key
+*.pem
+*.der
+*.pub
+.env
+*.ko
+*.ko.zst

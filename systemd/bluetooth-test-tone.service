@@ -1,0 +1,10 @@
+[Unit]
+Description=440 Hz Bluetooth microphone test tone
+After=pipewire.service wireplumber.service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash %h/bluetooth-test-headset/play-test-tone.sh
+Restart=always
+RestartSec=2
+KillMode=control-group
